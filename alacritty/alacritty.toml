@@ -6,3 +6,7 @@ startup_mode = "windowed"
 
 [general]
 working_directory = "C:\\Users\\user"
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font Mono", style = "Regular" }
+size = 11.0
