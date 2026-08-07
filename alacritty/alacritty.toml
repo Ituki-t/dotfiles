@@ -1,0 +1,8 @@
+[terminal.shell]
+program = "powershell.exe"
+
+[window]
+startup_mode = "windowed"
+
+[general]
+working_directory = "C:\\Users\\user"
