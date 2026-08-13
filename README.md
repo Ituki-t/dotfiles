@@ -9,14 +9,14 @@ Personal dotfiles for my development environment.
 - Bash
 - tmux
 ### scriptの実行
-- scripts/setup-wsl.sh
+#### scripts/setup-wsl.sh
 ```bash
 cd ~/dotfiles
 chmod +x scripts/setup-wsl.sh
 ./scripts/setup-wsl.sh
 ```
 ### tmux
-- key bindings<br>
+#### key bindings
 | Key | Action |
 |---|---|
 | `Ctrl+a` | Prefix |
@@ -25,7 +25,7 @@ chmod +x scripts/setup-wsl.sh
 | `Ctrl+a → k` | Move to upper pane |
 | `Ctrl+a → l` | Move to right pane |
 
-- Reload config
+#### Reload config
 ```bash
 tmux source-file ~/.tmux.conf
 ```
