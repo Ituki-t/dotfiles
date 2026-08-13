@@ -16,7 +16,7 @@ chmod +x scripts/setup-wsl.sh
 ./scripts/setup-wsl.sh
 ```
 ### tmux
-- key bindings
+- key bindings<br>
 | Key | Action |
 |---|---|
 | `Ctrl+a` | Prefix |
