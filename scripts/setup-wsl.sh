@@ -13,6 +13,7 @@ sudo apt install -y \
   unzip \
   ripgrep \
   fzf \
+  zoxide \
   tmux
 
 echo "Done!"
