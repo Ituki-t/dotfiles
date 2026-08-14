@@ -1,11 +1,8 @@
-[terminal.shell]
-program = "powershell.exe"
+[terminal]
+shell = { program = "wsl.exe", args = ["-d", "Ubuntu-22.04", "--cd", "~"] }
 
 [window]
 startup_mode = "windowed"
-
-[general]
-working_directory = "C:\\Users\\user"
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font Mono", style = "Regular" }
