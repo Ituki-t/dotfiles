@@ -4,9 +4,6 @@ shell = { program = "wsl.exe", args = ["-d", "Ubuntu-22.04", "--cd", "~"] }
 [window]
 startup_mode = "windowed"
 
-[window.ambiguous_bar_width]
-value = "Wide"
-
 [font]
 normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
 size = 11.0
