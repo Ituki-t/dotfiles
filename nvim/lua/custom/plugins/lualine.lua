@@ -6,15 +6,15 @@ return {
     },
     opts = {
       options = {
-        theme = "auto",
+        theme = "kanagawa",
         globalstatus = true,
         component_separators = {
           left = "|",
           right = "|",
         },
         section_separators = {
-          left = "",
-          right = "",
+          left = "",
+          right = "",
         },
       },
 
