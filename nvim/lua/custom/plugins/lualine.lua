@@ -9,8 +9,8 @@ return {
         theme = "kanagawa",
         globalstatus = true,
         component_separators = {
-          left = "|",
-          right = "|",
+          left = "",
+          right = "",
         },
         section_separators = {
           left = "",
@@ -22,8 +22,22 @@ return {
         lualine_a = { "mode" },
 
         lualine_b = {
-          "branch",
-          "diff",
+          {
+            "branch",
+            color = {
+              fg = "#1F1F28",
+              bg = "#D27E99",
+              gui = "bold",
+            },
+          },
+          -- {
+          --   "diff",
+          --   color = {
+          --     fg = "#1F1F28",
+          --     bg = "#D27E99",
+          --     gui = "bold",
+          --   },
+          -- },
         },
 
         lualine_c = {
@@ -35,10 +49,18 @@ return {
 
         lualine_x = {
           "diagnostics",
+          "filetype",
         },
 
         lualine_y = {
+          {
           "location",
+          color = {
+            fg = "#1F1F28",
+            bg = "#D27E99",
+            gui = "bold",
+          },
+          },
         },
 
         lualine_z = {
