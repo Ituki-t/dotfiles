@@ -7,8 +7,8 @@ $character
 """ 
 
 [directory]
-truncation_length = 3
-truncate_to_repo = true
+truncation_length = 4
+truncate_to_repo = false
 style = "fg:black bg:cyan"
 format = "[$path]($style)[](fg:cyan bg:purple)"
 
