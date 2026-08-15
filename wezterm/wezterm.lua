@@ -3,6 +3,7 @@ local act = wezterm.action
 local config = wezterm.config_builder()
 
 config.default_domain = "WSL:Ubuntu-22.04"
+config.window_background_opacity = 0.8
 
 config.leader = {
   key = "Space",
@@ -56,8 +57,6 @@ config.keys = {
     mods = "LEADER",
     action = act.PasteFrom("Clipboard"),
   }
-
 }
-
 
 return config
