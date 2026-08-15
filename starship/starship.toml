@@ -1,6 +1,6 @@
 format = """
 $directory\
-[$git_branch:$git_status](fg:black bg:purple)\
+[$git_branch$git_status](fg:black bg:purple)\
 [](fg:purple)\
 $line_break\
 $character
@@ -22,28 +22,3 @@ format = "$all_status$ahead_behind"
 [character]
 success_symbol = "[❯](bold green)"
 error_symbol = "[❯](bold red)"
-
-# format = """
-# $directory\
-# [$git_branch$git_status](fg:black bg:purple)\
-# [](fg:purple)\
-# $line_break\
-# $character
-# """
-#
-# [directory]
-# truncation_length = 3
-# truncate_to_repo = true
-# style = "fg:black bg:cyan"
-# format = "[$path]($style)[](fg:cyan bg:purple)"
-#
-# [git_branch]
-# symbol = " "
-# format = "$symbol$branch"
-#
-# [git_status]
-# format = "$all_status$ahead_behind"
-#
-# [character]
-# success_symbol = "[❯](bold green)"
-# error_symbol = "[❯](bold red)"
