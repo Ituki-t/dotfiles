@@ -133,3 +133,10 @@ eval "$(zoxide init bash)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# WezTerm: report the current working directory via OSC 7
+function __wezterm_osc7() {
+    printf '\033]7;file://%s%s\033\\' "$HOSTNAME" "$PWD"
+}
+
+PROMPT_COMMAND="__wezterm_osc7${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
