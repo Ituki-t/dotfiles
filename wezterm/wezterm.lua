@@ -50,6 +50,11 @@ config.keys = {
     key = "[",
     mods = "LEADER",
     action = act.ActivateCopyMode,
+  },
+  {
+    key = "p",
+    mods = "LEADER",
+    action = act.PasteFrom("Clipboard"),
   }
 
 }
