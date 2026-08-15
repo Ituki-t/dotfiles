@@ -11,6 +11,7 @@ config.leader = {
 }
 
 config.keys = {
+  -- pane navigation
   {
     key = "h",
     mods = "LEADER",
@@ -32,6 +33,7 @@ config.keys = {
     action = act.ActivatePaneDirection("Right"),
   },
 
+  -- pane splitting
   {
     key = "v",
     mods = "LEADER",
@@ -41,6 +43,13 @@ config.keys = {
     key = "s",
     mods = "LEADER",
     action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
+  },
+
+  -- copy mode
+  {
+    key = "[",
+    mods = "LEADER",
+    action = act.ActivateCopyMode,
   }
 
 }
