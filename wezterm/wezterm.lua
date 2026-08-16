@@ -8,7 +8,7 @@ config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 
 config.leader = {
-  key = "Space",
+  key = "a",
   mods = "CTRL",
   timeout_milliseconds = 1000,
 }
