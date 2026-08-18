@@ -151,3 +151,4 @@ PROMPT_COMMAND="__wezterm_osc7${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
 
 # Starship
 eval "$(starship init bash)"
+. "$HOME/.cargo/env"

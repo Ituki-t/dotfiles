@@ -14,7 +14,9 @@ sudo apt install -y \
   ripgrep \
   fzf \
   zoxide \
-  tmux
+  tmux \
+  clang \
+  libclang-dev
 
 echo "Installing Starship..."
 
@@ -35,5 +37,20 @@ fi
 
 echo "Installing Node.js LTS..."
 nvm install --lts
+
+echo "Installing Rust..."
+
+if ! command -v rustup >/dev/null 2>&1; then
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+fi
+
+# Load Cargo environment
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
+
+echo "Installing Tree-sitter CLI..."
+
+if ! command -v tree-sitter >/dev/null 2>&1; then
+  cargo install --locked tree-sitter-cli
+fi
 
 echo "Done!"
