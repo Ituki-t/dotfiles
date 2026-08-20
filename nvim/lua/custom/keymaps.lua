@@ -57,3 +57,13 @@ vim.keymap.set("n", "<leader>fb", builtin.buffers, {
 vim.keymap.set("n", "<leader>fh", builtin.help_tags, {
   desc = "Find Help",
 })
+
+vim.keymap.set("n", ";w", "<cmd>w<CR>", {
+  silent = true,
+  desc = "Save File",
+})
+
+vim.keymap.set("n", ";q", "<cmd>q<CR>", {
+  silent = true,
+  desc = "Quit File",
+})
