@@ -152,3 +152,5 @@ PROMPT_COMMAND="__wezterm_osc7${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
 # Starship
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
+export PATH="/home/itsuki/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/home/itsuki/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
