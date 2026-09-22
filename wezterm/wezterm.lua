@@ -3,9 +3,22 @@ local act = wezterm.action
 local config = wezterm.config_builder()
 
 config.default_domain = "WSL:Ubuntu-22.04"
+config.default_prog = { "powershell.exe", "-NoLogo" }
 config.window_background_opacity = 0.8
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = false
+
+wezterm.on("augment-command-palette", function()
+  return {
+    {
+      brief = "Open PowerShell in new tab",
+      action = act.SpawnCommandInNewTab({
+        args = { "powershell.exe", "-NoLogo" },
+        domain = { DomainName = "local" },
+      }),
+    },
+  }
+end)
 
 config.leader = {
   key = "a",
